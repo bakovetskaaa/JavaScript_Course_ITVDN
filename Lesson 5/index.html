@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Осьо</title>
+</head>
+<body>
+    <script>
+        // printMyName();
+
+
+        // // Function hoisting
+        // function printMyName(){
+        //     console.log("Hello");
+        //     console.log("My name is Olya");
+        // }
+        // printMyName();
+
+        // printName("Olichka");
+        // function printName(name){
+        //     console.log("Hello");
+        //     console.log(`My name is ${name}`)
+        // }
+        // printName("Olya");
+
+
+
+        // function printName(name){
+        //     if (name === undefined) {
+        //         name = "default";
+        //     }
+        //     console.log(`Hello ${name}`)
+        // }
+
+        // printName();
+
+        // function printNameOf(name = 'default'){
+        //     console.log(`Hello ${name}`)
+        // }
+
+        // printNameOf(); 
+
+        // function printNameOf(name = 'default', count){
+        //     console.log(`Hello ${name}`)
+        // }
+
+        // printNameOf();
+
+        // let test = printName();
+        // console.log(test);
+
+
+        // function add(x, y){
+        //     let sum = x + y;
+        //     return sum;
+        // }
+        
+        // let result = add(2, 5);
+        // console.log(result);
+
+
+        // let myGlobal = "This is global value";
+
+        // if(true){
+        //     let a = "local value";
+        //     console.log("first if statement");
+        //     console.log(myGlobal);
+        //     console.log(a);
+
+        //     if(true){
+        //     let a = "local value";
+        //     console.log("nested if statement");
+        //     console.log(myGlobal);
+        //     console.log(a);
+        //     }
+        // }
+
+
+        // if(true){
+        //     console.log("second if statement");
+        //     console.log(myGlobal);
+        //     // console.log(a);
+        // }
+
+
+
+        // function test() {
+        //     console.log("test1 " + test1);
+        //     var local = 1 ;
+        //     console.log(local);
+        //     // Variable hoisting
+        //     var test1 = 10;
+        //     console.log("test1 " + test1);
+
+        // }
+
+        // test();
+
+        let result;
+
+        // функція-оголошення
+        function add(a, b) {
+            let temp = a + b;
+            return temp;
+        }
+        result = add(1, 2);
+
+        //іменована функція-вираз 
+        let add1 = function add(a, b) {
+            return a + b;
+        }
+        result = add1(10, 20);
+
+        // функція-вираз, або анонімна функція
+        let add2 = function (a, b) {
+            return a + b;
+        }
+        result = add2(100, 200);
+
+        // стрілочна функція(arrow function)
+        let add3 = (a, b) =>{
+            return a + b;
+        }
+        result = add3(1000, 2000);
+
+        // стрілочна функція (arrow function) без операторних дужок
+        // let add2 = (a, b) => a + b;
+
+    </script>
+    <!-- <script>
+        console.log(myGlobal);
+    </script> -->
+</body>
+</html>
