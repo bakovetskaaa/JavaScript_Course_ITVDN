@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сонечко</title>
+    <style>
+        .test{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <ul
+        class = "skills-list" data-app="controller">
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li id="element">HTML/CSS</li>
+        <li>React.js</li>
+        <li>Node.js</li>
+        <li>AWS</li>
+
+    </ul>
+    <p id="element">Hello world!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi omnis libero eos beatae culpa delectus fuga repudiandae, odit aliquam quae voluptatibus quis dolorum quisquam, dolor aut voluptate. Maiores, nobis.</p>
+    
+    
+    <script>
+       let elements = document.querySelectorAll("#element - li");
+         elements[0].innerHTML = "<b>Hello world</b>"; 
+        // e.textContent = "<script>alert(document.cookie);<//script>" // xss cross sight scriptum
+        // e.className = "test";
+     // e.classList.add("ddd");
+
+
+    </script>
+
+</body>
+</html>
